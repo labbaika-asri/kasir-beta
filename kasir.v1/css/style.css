@@ -1,0 +1,879 @@
+/*HTML Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Float Clear*/
+.cf:before,
+.cf:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	*zoom: 1;
+}
+
+/*Style of Index*/
+body{
+	font: 16px/28px arial, sans-serif;
+	background-color: #eaeaea;
+	color: #333;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: bold;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+
+button:hover{
+	cursor: pointer;
+}
+
+input{
+	padding: 1px 5px;
+}
+
+textarea{
+	padding: 3px 5px;
+}
+
+.none{
+	display: none;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+.red{
+	border: 3px solid red;
+	border-radius: 5px;
+}
+
+.green{
+	border: 3px solid green;
+	border-radius: 5px;
+}
+
+.container{
+	width: 1346px;
+	margin: auto;
+}
+
+.top-bar{
+	background-color: lightseagreen;
+	line-height: 50px;
+	padding: 10px 20px;
+	box-sizing: all;
+}
+
+.menu{
+	display: inline-block;
+}
+
+.top-bar .menu ul li{
+	display: inline-block;
+}
+
+.top-bar .menu ul li a{
+	text-decoration: none;
+	font-weight: bold;
+	color: snow;
+	padding: 10px;
+}
+
+.user{
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+}
+
+.name{
+	float: left;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.top-bar h4, h5{
+	line-height: 17px;
+}
+
+
+.top-bar img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin-left: 20px;
+	float: right;
+	font-size: 14px;
+    line-height: 15px;
+}
+
+.containt{
+	padding: 20px;
+	background-color: beige;
+}
+
+.footer{
+	background-color: lightslategray;
+	text-align: center;
+	padding: 20px;
+}
+
+.footer p:first-of-type{
+	font-style: italic;
+	font-size: 15px;
+}
+
+/*Style of stokbarang*/
+.containt .stok h1{
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+.containt .stok label{
+	margin-left: 20px;
+}
+
+.containt .stok input{
+	width: 400px;
+}
+
+.containt .stok table{
+	border:black 1px solid;
+	margin: 30px auto 20px;
+	background-color: ghostwhite;
+	font: 14px/14px arial, sans-serif;
+	width: 1268px;
+}
+
+.containt .stok table th{
+	padding: 15px 35px;
+	font-weight: bold;
+	border-left: 1px black solid;
+	border-bottom: 1px black solid;
+	background-color: goldenrod;
+	vertical-align: middle;
+}
+
+.containt .stok table th:first-child{
+	border-left: none; 
+}
+
+.containt .stok table tr{
+	text-align: center; 
+}
+
+.containt .stok table td{
+	padding: 15px 35px;
+	border-top: 1px black solid;
+	border-bottom: 1px black solid;
+	border-left: 1px black solid;
+	vertical-align: middle;
+}
+
+.containt .stok table td:first-child{
+	border-top: none;
+	border-left: none;
+}
+
+
+/*Style of Input (Barang)*/
+
+div.input div.inputBaru{
+	width: 809px;
+	margin-bottom: 20px;
+	padding: 10px;
+	box-sizing: all;	
+}
+
+div.input div.inputBaru fieldset, div.input div.inputStok fieldset{
+	border: 2px coral solid;
+	vertical-align: middle;
+	border-radius: 20px;
+}
+
+div.input div.inputBaru fieldset{
+	padding: 30px;
+}
+
+div.input div.inputStok fieldset{
+	padding: 30px 5px;
+}
+
+div.input div.inputBaru legend, div.input div.inputStok legend{
+	margin-left: 25px;
+	color: darkslateblue;
+	text-transform: uppercase;
+}
+
+div.input div.inputBaru table input{
+	padding: 1px 5px;
+}
+
+div.input div.inputBaru table input#merek,
+div.input div.inputBaru table input#tipe,
+div.input div.inputBaru table input#warna{
+	width: 548px;
+}
+
+div.input div.inputBaru tr#trhargabeli input, div.input div.inputBaru tr#trhargajual input{
+	text-align: right;
+}
+
+.containt .input table tr#trmemori input, .containt .input table tr#trhargabeli input, .containt .input table tr#trhargajual input{
+	margin-right: 5px;
+}
+
+div.input div.inputBaru tr:last-child{
+	text-align: right;
+}
+
+div.input div.inputBaru tr:last-child td{
+	padding-top: 9px;
+}
+
+div.input div.inputBaru button#submit1{
+	margin-left: 10px;
+}
+
+/*Style Input (Stok)*/
+
+div.input div.inputStok div.box1, div.input div.inputStok div.box2{
+	width: 608px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+div.input div.inputStok div.box1{
+	margin-right: 20px;
+	padding-left: 25px;
+}
+
+div.input div.inputStok div.box2{
+	overflow: auto;
+}
+
+div.input div.inputStok div.box2 td{
+	vertical-align: top;
+}
+
+div.input div.inputStok div.box2 textarea#keterangan{
+	width: 475px;
+	height: 79px;
+}
+
+div.input div.ui-widget input#cari{
+	padding: 1px 5px;
+}
+
+div.input div.inputStok div#hasil-cari{
+	position: relative;
+	left: 123px;
+}
+
+div.input div.inputStok div#hasil-cari table{
+	border: 1px solid black;
+	width: 314px;
+	text-align: center;
+	background-color: snow;
+}
+
+
+div.input div.inputStok div#hasil-cari table tr{
+	border-bottom: 1px solid black;
+}
+
+div.input div.inputStok div#hasil-cari table tr:last-child{
+	border-bottom: none;
+}
+
+div.input div.inputStok div#hasil-cari table tr:hover{
+	cursor: pointer;
+	background-color: #eaeaea;
+}
+
+div.input div.inputStok div#hasil-cari table td{
+	border-right: 1px solid black;
+}
+
+div.input div.inputStok div#hasil-cari table td:last-child{
+	border-right: none;
+}
+
+/*Style Input (tabelOutput)*/
+div.input div.inputStok div.tableOutput table{
+	width: 1241px;
+	margin: 19px auto;
+	text-align: center;
+}
+
+div.input div.inputStok div.tableOutput tr td input,
+div.input div.inputStok div.tableOutput tr td select{
+	width: 140px;
+	padding: 1px 5px;
+}
+
+div.input div.inputStok div.tableOutput table tr button#submit2{
+	margin-left: 8px; 
+}
+
+/*Style Input (tabelHasil)*/
+
+div.input div.inputStok div.tableHasil table{
+	width: 1160px;
+	margin: 25px auto 0px;
+	border: 1px solid black;
+	border-right: none;
+	border-bottom: none;
+}
+
+div.input div.inputStok div.tableHasil table tr th,
+div.input div.inputStok div.tableHasil table tr td{
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+div.input div.inputStok div.tableHasil table tr td:last-child{
+	border-bottom: none;
+	border-right: none;
+}
+
+div.input div.inputStok div.tableHasil table td{
+	padding: 1px 10px;
+	text-align: center;
+}
+
+div.input div.inputStok div.tableHasil table td input{
+	text-align: center;
+	width: 142px;
+}
+
+div.input div.inputStok div.tableHasil table td span{
+	color: red;
+}
+
+div.input div.inputStok div.tableHasil table td span:hover{
+	font-weight: bold;
+	cursor: pointer;
+}
+
+div.input div.inputStok div.tableHasil div.submit3{
+	float: right;
+	margin-top: 12px;
+	margin-right: 10px;
+}
+
+/*Style updatebarang*/
+
+div.update div.update-barang input#cariupdate{
+	margin-bottom: 25px;
+	width: 400px;
+}
+
+div.update div.update-barang{
+	width: 809px;
+	margin-bottom: 20px;
+	padding: 10px;
+	box-sizing: all;	
+}
+
+div.update div.update-barang fieldset{
+	border: 2px coral solid;
+	padding: 30px;
+	vertical-align: middle;
+	border-radius: 20px;
+}
+
+div.update div.update-barang legend{
+	margin-left: 25px;
+	color: darkslateblue;
+	text-transform: uppercase;
+}
+
+div.update div.update-barang table input{
+	padding: 1px 5px;
+}
+
+div.update div.update-barang table input#merekupdate,
+div.update div.update-barang table input#tipeupdate,
+div.update div.update-barang table input#warnaupdate{
+	width: 548px;
+}
+
+div.update div.update-barang tr#trhargabeli input, div.update div.update-barang tr#trhargajual input{
+	text-align: right;
+}
+
+.containt .update table tr#trmemori input, .containt .update table tr#trhargabeli input, .containt .update table tr#trhargajual input{
+	margin-right: 5px;
+}
+
+div.update div.update-barang tr:last-child{
+	text-align: right;
+}
+
+div.update div.update-barang tr:last-child td{
+	padding-top: 9px;
+}
+
+div.update div.update-barang button#submitupdate, div.update div.update-barang button#deleteupdate{
+	margin-left: 10px;
+}
+
+/*Style Kasir*/
+div.kasir{
+	margin: auto;
+}
+
+div.kasir h1{
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+div.kasir div.box1, div.kasir div.box2{
+	width: 604px;
+	padding: 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+div.kasir div.box1{
+	margin-right: 12px;
+}
+
+div.kasir div.box1 input#carikasir{
+	width: 347px;
+}
+
+div.kasir div.box2{	
+	overflow: auto;
+}
+
+div.kasir div.box2 td{
+	vertical-align: top;
+}
+
+div.kasir div.box2 textarea#keterangankasir{
+	width: 475px;
+	height: 79px;
+}
+
+div.kasir div.output-cari table{
+	width: 1241px;
+	text-align: center;
+	margin: auto;
+}
+
+div.kasir div.output-cari tr td input,
+div.kasir div.output-cari tr td select{
+	width: 164px;
+	padding: 1px 5px;
+}
+
+div.kasir div.output-cari table tr button#submitpembelian1{
+	margin-left: 8px; 
+}
+
+div.kasir div.table-pembelian h2{
+	text-align: center;
+	margin-top: 20px;
+}
+
+div.kasir div.table-pembelian table{
+	width: 1272px;
+	margin: 10px auto 0px;
+	border: 1px solid black;
+	border-right: none;
+	border-bottom: none;
+}
+
+div.kasir div.table-pembelian table tr th{
+	font-weight: bold;
+}
+
+div.kasir div.table-pembelian table tr th,
+div.kasir div.table-pembelian table tr td{
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+div.kasir div.table-pembelian table tr td:last-child{
+	border-bottom: none;
+	border-right: none;
+}
+
+div.kasir div.table-pembelian table tr:last-child td:last-child{
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+div.kasir div.table-pembelian table tr:last-child{
+	font-weight: bold;
+}
+
+div.kasir div.table-pembelian table td{
+	padding: 1px 10px;
+	text-align: center;
+}
+
+div.kasir div.table-pembelian table td input{
+	text-align: center;
+	width: 142px;
+}
+
+div.kasir div.table-pembelian table td span{
+	color: red;
+}
+
+div.kasir div.table-pembelian table td span:hover{
+	font-weight: bold;
+	cursor: pointer;
+}
+
+div.kasir div.table-pembelian div.submit-pembelian{
+	float: right;
+	margin-top: 12px;
+	margin-right: 10px;
+}
+
+/*Style Laporan*/
+div.laporan h1{
+	text-align: center;
+	margin-bottom: 18px;
+}
+
+div.laporan table.ika{
+	margin-left: 25px;
+	margin-bottom: 25px;
+}
+
+div.laporan select{
+	font-size: 15px;
+}
+
+div.laporan div.hasil-laporan fieldset{
+	border: 2px coral solid;
+	border-radius: 20px;
+	padding: 20px 20px 0px;
+}
+
+div.laporan table.ika tr:last-child td{
+	text-align: right;
+}
+
+div.laporan div.hasil-laporan fieldset legend{
+	margin-left: 50px;
+}
+
+div.laporan div.hasil-laporan div.box1{
+	border: 1px cornflowerblue solid;
+	border-radius: 20px;
+	padding: 10px;
+	margin-bottom: 20px;
+	background-color: #aeea;
+	clear: right;
+}
+
+div.laporan table.ika input{
+	width: 93px;
+}
+
+#ui-datepicker-div{
+	font-size: 12px;
+}
+
+.select{
+	background-color: lightgreen;
+}
+
+div.laporan table.ika button{
+	margin-left: 13px;
+}
+
+div.laporan table.ika td button:first-child, button#rst{
+	margin-left: 0px;
+}
+
+div.laporan div.hasil-laporan div.box1 div.box2,
+div.laporan div.hasil-laporan div.box1 div.box3{
+	vertical-align: top;
+	display: inline-block;
+	width: 617px;
+}
+
+div.laporan div.hasil-laporan div.box1 table.data{
+	border: 1px solid black;
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+}
+
+div.laporan div.hasil-laporan div.box1 table.data th{
+	font-weight: bold;
+}
+
+div.laporan div.hasil-laporan div.box1 table.data tr{
+	border-bottom: 1px solid black;
+}
+
+div.laporan div.hasil-laporan div.box1 table.data tr:last-child{
+	border-bottom: none;
+}
+
+div.laporan div.hasil-laporan div.box1 table.data td,
+div.laporan div.hasil-laporan div.box1 table.data th{
+	border-right: 1px solid black;
+}
+
+div.laporan div.hasil-laporan div.box1 table.data td:last-child,
+div.laporan div.hasil-laporan div.box1 table.data th:last-child{
+	border-right: none;
+}
+
+/*Style of Data Kariawan*/
+
+div.data-kariawan h1{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+div.data-kariawan div.hasil-data{
+	border: 2px coral solid;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+div.data-kariawan div.hasil-data div.box1{
+	width: 200px;
+	height: 283px;
+	margin: 5px;
+	border: 1px indigo solid;
+	background-color: lavender;
+	padding: 20px;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+	float: left;
+	overflow: overlay;
+}
+
+div.data-kariawan div.hasil-data div.box1 span.delete{
+	position: absolute;
+	left: 18px;
+	top: 12px;
+	font-size: 23px;
+	color: red;
+}
+
+div.data-kariawan div.hasil-data div.box1 span.delete:hover{
+	font-weight: bold;
+	cursor: pointer;
+}
+
+div.data-kariawan div.hasil-data div.box1 img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+div.data-kariawan div.hasil-data h5{
+	line-height: 20px;
+}
+
+div.data-kariawan div.hasil-data h6{
+	line-height: 19px;
+}
+
+
+/*Registrasi Karyawan*/
+div.registrasi-karyawan{
+	text-align: center;
+}
+
+div.registrasi-karyawan h1{
+	margin-bottom: 35px;
+}
+
+div.daftar-baru, div.ubah-password{
+	width: 45%;
+	display: inline-block;
+}
+
+div.daftar-baru fieldset, div.ubah-password fieldset{
+	padding: 10px;
+	border: 2px coral solid;
+	border-radius: 20px;
+	margin: 0 20px;
+}
+
+div.registrasi-karyawan div.box1{
+	width: 100%;
+	padding: 20px;
+	background-color: #e5aaee;
+	border: 3px solid violet;
+	border-radius: 20px;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+div.registrasi-karyawan div.box1 table tr:last-child td{
+	text-align: right;
+}
+
+div.registrasi-karyawan div.box1 table input{
+	width: 224px;
+}
+
+/*Style of my profile*/
+div.myprofile{
+	text-align: center;
+}
+
+div.myprofile h1{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+div.myprofile img{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+}
+
+div.myprofile table{
+	margin: auto;
+	text-align: left;
+}
+
+/*Style of uabh_password*/
+div.update-password fieldset{
+	padding: 30px;
+	border: 2px coral solid;
+	border-radius: 20px;
+	margin: 0 20px;
+	width: 561px;
+}
+
+div.update-password fieldset legend{
+	margin-left: 10px;
+	color: darkslateblue;
+	text-transform: uppercase;
+}
+
+div.update-password div.box1{
+	width: 100%;
+	padding: 20px;
+	background-color: #e5aaee;
+	border: 3px solid violet;
+	border-radius: 20px;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+div.update-password div.box1 table tr:last-child td{
+	text-align: right;
+}
+
+div.update-password div.box1 table input{
+	width: 224px;
+}
+
+/*Style of Edit-profile*/
+div.edit-profile{
+	width: 630px;
+	padding: 0 20px 20px;
+	margin: auto;
+}
+
+div.edit-profile h1{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+div.edit-profile div.box1,
+div.edit-profile div.box2{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.edit-profile div.box1{
+	width: 270px;
+	text-align: center;
+	padding: 10px;
+}
+
+div.edit-profile div.box1 img{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+}
+
+div.edit-profile div.box1 input{
+	display: block;
+	padding: 0px;
+	margin: auto;
+}
+
+div.edit-profile div.box1 input:hover{
+	cursor: pointer;
+}
+
+div.edit-profile div.box2 input{
+	width: 180px;
+}
+
+div.edit-profile div.box2 button{
+	margin-top: 20px;
+}
